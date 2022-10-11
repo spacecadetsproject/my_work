@@ -11,11 +11,7 @@ search_form.submit()
 # Проверяем можно лои открыть другие варианты поиска
 search_form = browser.find_element_by_xpath("/html/body/div[1]/div/nav[2]/div/div/div/div/ul/li[2]/a").click()
 search_form = browser.find_element_by_xpath("/html/body/div/div/div/div[1]/header/div[1]/div[3]/div/button").click()
-search_form = browser.find_element_by_xpath("/html/body/div/div/div/div[1]/header/div[1]/div[3]/div/div/nav/div[1]/ul/li[1]/a").click()
-
-# Проверяем надпись на странице
-message = browser.find_element_by_xpath("/html/body/main/div[1]/div/h1").text
-assert message == "Plant trees while you search the web"
+search_form = browser.find_element_by_xpath("/html/body/div/div/div/div[1]/header/div[1]/div[3]/div/div/nav/div[1]/ul/li[1]/a").click(
 
 # Проверяем функциональность
 search_form = browser.find_element_by_xpath("/html/body/nav[1]/div[2]/div[2]/div/a").click()
